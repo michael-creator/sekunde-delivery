@@ -7,6 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>Delivery Address</h3>
+      <form id="address-form">
+        <div class="row">
+          <div class="col-xs-6">
+            <label for="first-name">First Name</label><input required="" type="text"
+              class="form-control address-spacing">
+          </div>
+          <div class="col-xs-6">
+            <label for="last-name">Last Name</label><input required="" type="text" class="form-control address-spacing">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <label for="street-address">Address</label><input required="" type="text" class="form-control"
+              id="street-add">
+          </div>
+          <div class="col-xs-3">
+            <label for="city-name">City</label><input required="" type="text" class="form-control" id="city-add">
+          </div>
+          <div class="col-xs-1">
+            <label for="state-name">city</label>
+            <select required="" class="form-control delivery-address" id="state-select">
+              <option>Kisumu</option>
+              <option>Nairobi</option>
+              <option>mombasa</option>
+              <option>kiambu</option>
+            </select>
+          </div>
+          <div class="col-xs-2">
+            <label for="zipcode">Zipcode</label><input required="" type="text" class="form-control" id="zip-add">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="order-proceed-btn" onclick="delivery()">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
