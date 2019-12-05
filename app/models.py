@@ -1,3 +1,4 @@
+
 from . import db
 from sqlalchemy.sql import func
 from . import login_manager
