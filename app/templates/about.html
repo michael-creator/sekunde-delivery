@@ -1,20 +1,19 @@
 {% extends 'base.html'%}
-
-
 {% block styles%}
-{{ super() }}
-<link rel="stylesheet" href="../static/css/styles.css">
-<link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
 {% endblock %}
+
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid  bg-personal">
 <div class="container">
   <div class="col-md-6">
     <h2 class="text-success">About Us</h2>
     <p class="text-justify">Sekunde-Delivery is a business that is dedicated to excellence and that is especially when it comes to the
         satisfaction of our customers. We ensure that the services we offer are the best and we deliver your goods on time to avoid
         inconviniences.
-        our services are known all over the country and wew are trusted by many.
+        our services are known all over the country and we are trusted by many.
         Sekunde-Delivery the best for all.</p>
 </div>
 <div class="col-md-6">
