@@ -1,6 +1,8 @@
 class Config:
     SECRET_KEY='c037919dd5689b'
       
+
+      
     
     
 class ProductionConfig(Config):
