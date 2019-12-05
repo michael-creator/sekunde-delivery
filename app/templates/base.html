@@ -1,12 +1,15 @@
-<html>
-{% block styles%}
-{% endblock %}
-{% if title %}
-<title>Blogwebsite{{ title }}</title>
-{% else %}
-<title>BlogPost</title>
-{% endif %}
+{% extends 'bootstrap/base.html'%}
 
+<html>
+<head>
+    {% block styles%}
+    {% endblock %}
+    {% if title %}
+    <title>website{{ title }}</title>
+    {% else %}
+    <title></title>
+    {% endif %}
+</head>
 <body>
     
     {% block content %}
