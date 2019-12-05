@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="../static/css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+{% endblock %}
+{% block styles%}
+       <div class="contact">
+        <h1>Contact Us</h1>
+        <form>
+            <p> You can reach us through:</p>
+            <div class="message">
+            <label>Enter Name</label> <br>
+            <input type="text" id="name" placeholder="Enter your Name" required><br>
+            <label>Enter Email</label><br>
+            <input type="text" id="email" placeholder="Enter your Email" required><br>
+            <label>Enter your message</label><br>
+            <input type="text" id="message" placeholder="Enter your Message" required><br>
+            <button class="submit btn-primary" id="submit">submit</button>
+         </div>
+     
+   
+            <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<div class="cont">
+<a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+<a href="https://www.google.com"  target="_blank"class="fa fa-google"></a>
+<a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+<a href="https://www.whatsup.com" target="_blank" class="fa fa-whatsup"></a>
+</div>
+</div>
+</form>
+
+<script src="js/scripts1.js"></script>
+    
+</body>
+</html>
+{% endblock %}
