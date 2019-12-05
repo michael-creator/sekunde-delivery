@@ -14,3 +14,13 @@ h1{
     font-family: 'Notable', sans-serif;
 
 }
+.bg-personal{
+    font-size: 10px;
+    text-align: center;
+    font-family: fantasy;
+}
+h2{
+    font-size: large;
+    text-underline-position: below;
+    font-size: 40px;
+}

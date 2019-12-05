@@ -7,3 +7,13 @@ from . import main
 def index():
 
     return render_template('index.html')
+
+@main.route('/about', methods = ['GET','POST'])
+def about():
+    
+    return render_template('about.html')
+
+@main.route('/contact', methods = ['GET','POST'])
+def profile():
+    
+    return render_template('contact.html')
