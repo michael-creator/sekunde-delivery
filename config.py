@@ -1,5 +1,5 @@
 class Config:
-    pass
+    SECRET_KEY='c037919dd5689b'
       
     
     

@@ -1,11 +1,13 @@
 <html>
   {% block styles%} {% endblock %} {% if title %}
-  <title>Blogwebsite{{ title }}</title>
+  <title>website{{ title }}</title>
   {% else %}
-  <title>BlogPost</title>
+  <title></title>
   {% endif %}
 
   <body>
-    {% block content %} {% endblock %}
+    {% block content %}
+
+    {% endblock %}
   </body>
 </html>
