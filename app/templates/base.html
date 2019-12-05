@@ -1,11 +1,9 @@
 <html>
-{% block styles%}
-{% endblock %}
-{% if title %}
-<title>Blogwebsite{{ title }}</title>
-{% else %}
-<title>BlogPost</title>
-{% endif %}
+  {% block styles%} {% endblock %} {% if title %}
+  <title>Blogwebsite{{ title }}</title>
+  {% else %}
+  <title>BlogPost</title>
+  {% endif %}
 
 <body>
 
@@ -14,4 +12,8 @@
 </body>
 
 
+</html>
+  <body>
+    {% block content %} {% endblock %}
+  </body>
 </html>
