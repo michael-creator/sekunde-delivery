@@ -1,3 +1,5 @@
+
+
 from flask import render_template
 from . import main
 from .forms import ContactForm
@@ -19,5 +21,6 @@ def about():
 def profile():
     
     return render_template('contact.html')
+
 
 
