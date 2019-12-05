@@ -2,6 +2,8 @@ from flask import render_template
 from . import main
 from .forms import ContactForm
 
+
+
 @main.route('/')
 def index():
 
@@ -10,4 +12,4 @@ def index():
 @main.route('/sekunde-delivery/new/<int:id>', methods = ['GET','POST'])
 def contact():
     form = ContactForm()
-    return render_template('contact.html', form=form) git
+    return render_template('contact.html', form=form) 
