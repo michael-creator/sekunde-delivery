@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html as wtf" as wtf %}
+
+{% block content %}
+<h2>CONTACT</h2>
+<form action = "{{ url_for('contact') }}" method = post>
+    {{ form.hidden_tag() }}
+
+    {{ form.name.label }}
+    {{ form.name }}
+
+    {{ form.email.label }}
+    {{ form.email }}
+
+    {{ form.message.label }}
+    {{ form.message }}
+
+    {{ form.submit }}
+</form>
+{% endblock %}
