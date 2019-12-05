@@ -1,5 +1,5 @@
 from flask_script import Manager, Server
-from app import create_app
+from app import create_app,db
 
 # Creating app instance
 app = create_app('development')
