@@ -9,7 +9,15 @@ def index():
 
     return render_template('index.html')
 
-@main.route('/sekunde-delivery/new/<int:id>', methods = ['GET','POST'])
-def contact():
-    form = ContactForm()
-    return render_template('contact.html', form=form) 
+
+@main.route('/about', methods = ['GET','POST'])
+def about():
+    
+    return render_template('about.html')
+
+@main.route('/contact', methods = ['GET','POST'])
+def profile():
+    
+    return render_template('contact.html')
+
+
