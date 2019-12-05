@@ -1,5 +1,6 @@
 from flask import render_template
 from . import main
+from .forms import ContactForm
 
 
 
@@ -7,6 +8,7 @@ from . import main
 def index():
 
     return render_template('index.html')
+
 
 @main.route('/about', methods = ['GET','POST'])
 def about():
@@ -17,3 +19,5 @@ def about():
 def profile():
     
     return render_template('contact.html')
+
+

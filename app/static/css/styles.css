@@ -1,9 +1,19 @@
 body{
-    background-image: url('https://cdn.pixabay.com/photo/2015/11/07/11/24/road-1031108__340.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/11/09/26/office-1730939__340.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 30px;
+}
+.nav-link{
+    list-style: none;
+    display: inline;;
 }
 
+
+li{
+    font-size: 30px;
+    float:right;
+}
 h1{
     color:black;
     font-size: 40px;
@@ -14,6 +24,7 @@ h1{
     font-family: 'Notable', sans-serif;
 
 }
+
 .bg-personal{
     font-size: 10px;
     text-align: center;
@@ -23,4 +34,12 @@ h2{
     font-size: large;
     text-underline-position: below;
     font-size: 40px;
+
+.para{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Notable', sans-serif;
+    font-size: 50%;
+    text-transform: uppercase;
+
 }

@@ -1,13 +1,27 @@
-<html>
-  <link rel="stylesheet" href="../static/css/styles.css">
-  {% block styles%} {% endblock %} {% if title %}
-  <title>sekunde-Deliverywebsite{{ title }}</title>
-  {% else %}
-  <title>sekunde-Delivery</title>
-  {% endif %}
 
-  <body>
-    {% block content %} 
-    {% endblock %}
-  </body>
-</html>
+
+{%extends 'bootstrap/base.html'%}
+
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock %}
+{%block styles%}
+{{super()}}
+<link href="https://fonts.googleapis.com/css?family=Notable|Tangerine&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/styles.css">
+{%endblock%}
+{% if title %}
+<title>sekunde.com{{ title }}</title>
+{% else %}
+<title>sekunde.com</title>
+{% endif %}
+
+
+
+
+
+{% block content %}
+{% endblock %}
+
+
+
