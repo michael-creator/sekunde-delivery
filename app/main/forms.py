@@ -9,3 +9,5 @@ class ContactForm(FlaskForm):
     subject = TextField("Subject")
     message = TextAreaField("Message")
     submit = SubmitField("Send")
+
+
