@@ -1,36 +1,102 @@
 {% extends 'base.html'%}
 {% block styles%}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
-    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 <div class="container-fluid  bg-personal">
-<div class="container">
-  <div class="col-md-6">
-    <h2 class="text-success">About Us</h2>
-    <p class="text-justify">Sekunde-Delivery is a business that is dedicated to excellence and that is especially when it comes to the
-        satisfaction of our customers. We ensure that the services we offer are the best and we deliver your goods on time to avoid
-        inconviniences.
-        our services are known all over the country and we are trusted by many.
-        Sekunde-Delivery the best for all.</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h4 class="text-success">About Us</h4>
+            </div>
+            <div class="card">
+                <p class="text-justify">Sekunde-Delivery is a business that is dedicated to excellence and that
+                    is
+                    especially when it comes to the
+                    satisfaction of our customers. We ensure that the services we offer are the best and we
+                    deliver your
+                    goods on time to avoid
+                    inconviniences.
+                    our services are known all over the country and we are trusted by many.
+                    Sekunde-Delivery the best for all.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <h4 class="text-success">Our Services</h4>
+            </div>
+
+            <div class="card">
+                <p class="text-justify">We are a prominent business organization involved in rendering delivery
+                    Services.<br>Our services
+                    are catered to different sectors at cost-effective prices as per the sustainability and
+                    requirements
+                    of the client.</p>
+            </div>
+            <div class="card">
+                <div class="list">
+
+                    <p>We offer high quality services that match the expectations of our customers</p>
+                    <p>Best possible solutions keeping in mind the clients' strategic business interests and risks
+                        involved</p>
+                    <p>Highly reliable, effective and can be implemented as per the specifications provided by the
+                        clients</p>
+                    <p>Skilled and talented professionals with immense industry experience</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 </div>
-<div class="col-md-6">
-  <h2 class="text-success">Our Services</h2>
-  <p class="text-justify">We are a prominent business organization involved in rendering delivery Services.<br>Our services
-      are catered to different sectors at cost-effective prices as per the sustainability and requirements
-      of the client.</p>
-      <div class="list">
-  <ul>
-      <li>We offer high quality services that match the expectations of our customers</li>
-      <li>Best possible solutions keeping in mind the clients' strategic business interests and risks
-          involved</li>
-      <li>Highly reliable, effective and can be implemented as per the specifications provided by the
-          clients</li>
-      <li>Skilled and talented professionals with immense industry experience</li>
-  </div>
-  </ul>
-</div>
-</div>
-  {%endblock %}
+<footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="footer-pad">
+                        <h4>Office reach</h4>
+                        <ul class="list-unstyled">
+
+                            <li><a href="#">Payment Center</a></li><br>
+                            <li><a href="#">Contact Directory</a></li><br>
+                            <li><a href="#">Forms</a></li><br>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+
+                    <div class="footer-pad">
+                        <h4>Reability</h4>
+                        <ul class="list-unstyled">
+
+                            <li><a href="#">Accessibility</a></li><br>
+
+                            <li><a href="#">Privacy Policy</a></li><br>
+                            <li><a href="#">FAQs</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12 copy">
+                    <p class="text-center">&copy; Copyright 2019 - Company Name. All rights reserved.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+{%endblock %}
