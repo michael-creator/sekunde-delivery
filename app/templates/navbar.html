@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+        <ul class="nav navbar-nav navbar-right">
+
+
+
+            {% if current_user.is_authenticated and current_user.profile_img is none %}
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="{{url_for('main.profile',username=current_user.username)}}"><span>Hello,</span>
+                    {{current_user.username}}</a>
+            </li>
+
+            <li class="nav-item">
+                <span class="nav-item"><a href="{{url_for('main.profile',username=current_user.username)}}"><img
+                            src="{{url_for('static', filename = 'images/default.jpg')}}" alt=""
+                            style="width:5%;height:8%;margin-right:50%;"></a></span>
+            </li>
+
+            <li class="nav-item navbar-nav active">
+                <a class="nav-link" href="{{url_for('main.')}}">Home <span class="sr-only"></span></a>
+            </li>
+
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('auth.signout')}}">Sign Out</a><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('main.profile',username=current_user.username)}}">Account</a><span
+                    class="sr-only"></span></a>
+            </li>
+            {% elif current_user.is_authenticated and current_user.profile_img is not none %}
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="{{url_for('main.profile',username=current_user.username)}}"><span>Hello,</span>
+                    {{current_user.username}}</a>
+            </li>
+
+
+            <li>
+                <span class="nav-item"><a href="{{url_for('main.profile',username=current_user.username)}}"><img
+                            src="{{url_for('static', filename = current_user.profile_img)}}" alt=""
+                            style="width:5%;height:7%;margin-right:50%;"></a></span>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('main.all_pitches')}}">Home <span class="sr-only"></span></a>
+            </li>
+
+
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('auth.signout')}}">Sign Out</a><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('main.profile',username=current_user.username)}}">Account</a><span
+                    class="sr-only"></span></a>
+            </li>
+            {%else%}
+            <li class="nav-item  active">
+                <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item  active">
+                <a class="nav-link" href="/about">About<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item  active">
+                <a class="nav-link" href="/contact">Contact<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('auth.register')}}">Sign in<span class="sr-only"></span></a>
+            </li>
+            {%endif%}
+        </ul>
+    </div>
+</nav>

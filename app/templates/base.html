@@ -1,17 +1,26 @@
-<html>
-{% block styles%}
+
+
+{%extends 'bootstrap/base.html'%}
+
+{% block navbar %}
+{% include "navbar.html" %}
 {% endblock %}
+{%block styles%}
+{{super()}}
+<link href="https://fonts.googleapis.com/css?family=Notable|Tangerine&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/styles.css">
+{%endblock%}
 {% if title %}
-<title>Blogwebsite{{ title }}</title>
+<title>sekunde.com{{ title }}</title>
 {% else %}
-<title>BlogPost</title>
+<title>sekunde.com</title>
 {% endif %}
 
-<body>
-    
-    {% block content %}
-    {% endblock %}
-</body>
 
 
-</html>
+
+
+{% block content %}
+{% endblock %}
+
+
