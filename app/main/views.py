@@ -4,12 +4,11 @@ from flask import render_template
 from . import main
 from .forms import ContactForm
 from flask import render_template,request,redirect,url_for,abort
-from ..models import Reviews, User
+from ..models import  User
 
 
 
 @main.route('/')
-# @login_required
 def index():
 
     return render_template('index.html')
