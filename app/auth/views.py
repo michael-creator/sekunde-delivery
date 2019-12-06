@@ -13,6 +13,7 @@ from . import auth
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'Success')
         user = User(email = form.email.data, username = form.username.data,password = form.password.data)
         db.session.add(user)
         db.session.commit()
